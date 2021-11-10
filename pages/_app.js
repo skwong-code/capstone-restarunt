@@ -6,15 +6,19 @@ import Layout from "../components/layout"
 import Cookie from "js-cookie"
 
 
-function MyApp(props){
+function MyApp(props){ 
   var {cart,addItem,removeItem, user, setUser} = useContext(AppContext)
-  const [state,setState] = useState({cart:cart});
+  
+  const [state,setState] = useState({cart, user});
+  
   const { Component, pageProps } = props;
   
   
   setUser = (user) => {
-    setState({ user });
-  };
+    setState({ ...state, user });
+  }; 
+
+  
   addItem = (item) => {
     let { items } = state.cart;
     //check for item already in cart
@@ -39,7 +43,7 @@ function MyApp(props){
           items: [...state.cart.items,temp],
           total: state.cart.total + item.price,
       }
-      setState({cart:newCart})
+      setState({ ...state, cart:newCart})
       console.log(`Total items: ${JSON.stringify(newCart)}`)
     } else {
       // we already have it so just increase quantity ++
@@ -54,7 +58,7 @@ function MyApp(props){
           total: state.cart.total + item.price,
         }
     }
-    setState({cart: newCart});  // problem is this is not updated yet
+    setState({ ...state, cart: newCart});  // problem is this is not updated yet
     console.log(`state reset to cart:${JSON.stringify(state)}`)
      
   };
@@ -79,11 +83,28 @@ function MyApp(props){
       items.splice(index, 1);
       var newCart= { items: items, total: state.cart.total - item.price } 
     }
-    setState({cart:newCart});
+    setState({...state, cart:newCart});
   }
 
   return (
-    <AppContext.Provider value={{cart: state.cart, addItem: addItem, removeItem: removeItem,isAuthenticated:false,user:null,setUser:()=>{}}}>
+    <AppContext.Provider value={{
+        
+        user: state.user,
+        cart: state.cart, 
+        setUser,
+        addItem,
+        removeItem,
+        isAuthenticated:false,
+      
+        
+    
+
+      
+      
+    }}>
+      
+      
+      
       <Head>
         <link
           rel="stylesheet"

@@ -52,9 +52,15 @@ function CheckoutForm() {
       }),
     });
 
+    //area below is the check out response succcess. 
+
     if (!response.ok) {
       setError(response.statusText);
-      console.log("SUCCESS")
+      console.log("ERROR")
+    }else{ 
+      alert('Your Payment Succeeded');
+      window.location.replace('/')
+
     }
 
     // OTHER stripe methods you can use depending on app

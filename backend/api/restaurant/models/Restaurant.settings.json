@@ -28,6 +28,9 @@
     "dishes": {
       "collection": "dish",
       "via": "restaurant"
+    },
+    "Address": {
+      "type": "string"
     }
   }
 }

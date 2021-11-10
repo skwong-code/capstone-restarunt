@@ -1,0 +1,26 @@
+http://localhost:1337/admin
+admin | password
+admin@email.com
+
+TestUser
+test@email.com
+password
+
+
+trooper
+trooper@email.com	
+password
+
+Xenomorph00#@!
+
+STRIPE
+
+Publlish Key
+
+pk_test_51JrXkAJMnXi6D4GVA702enoCQnJTs564tMMO9Ebtx5adkZ0PtZ9kKFK6g48e4JoOgkO4t02qV9NaFhJx4oT0dH0q00ZMi34B88
+
+secret Key
+
+sk_test_51JrXkAJMnXi6D4GVJ1vYcmwDHlPqfnaJTsBjVpY2pc43aH5EIJTYgUIbgIrP8y6V3hdjKm576PWeB1WVRhH3Gebr00l3eo7KtF
+
+4242424242424242
