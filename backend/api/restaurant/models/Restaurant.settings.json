@@ -29,7 +29,7 @@
       "collection": "dish",
       "via": "restaurant"
     },
-    "Address": {
+    "Limitations": {
       "type": "string"
     }
   }

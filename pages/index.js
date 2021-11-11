@@ -17,7 +17,7 @@ function Home() {
     return (
         <ApolloProvider client={client}>
           <div className="search">
-              <h2> Restaurants Across the West Coast USA</h2>
+              <h2> Death Star Food Ordering Termnal</h2>
                 <InputGroup >
                 <InputGroupAddon addonType="append"> Search </InputGroupAddon>
                 <Input

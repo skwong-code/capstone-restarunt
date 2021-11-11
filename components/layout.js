@@ -7,7 +7,7 @@ import { Container, Nav, NavItem } from "reactstrap";
 import AppContext from "./context";
 
 const Layout = (props) => {
-const title = "The Restaraunt Ordering App";
+const title = "Death Star Food Delvery Interface";
 
 const {user} = useContext(AppContext);
 
