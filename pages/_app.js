@@ -94,17 +94,10 @@ function MyApp(props){
         setUser,
         addItem,
         removeItem,
-        isAuthenticated:false,
-      
-        
-    
-
-      
+        isAuthenticated:false,         
       
     }}>
-      
-      
-      
+        
       <Head>
         <link
           rel="stylesheet"

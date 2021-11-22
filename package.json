@@ -4,8 +4,9 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
+    "start": "NODE_ENV=production node server.js -p $PORT",
     "build": "next build",
-    "start": "next start"
+    "heroku-postbuild": "next build"
   },
   "dependencies": {
     "@apollo/client": "^3.2.4",

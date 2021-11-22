@@ -56,7 +56,7 @@ if(searchQuery.length > 0){
           top={true}
           style={{ height: 200 }}
           src={
-          `http://localhost:1337`+ res.image.url
+          `https://skw-strapi2.herokuapp.com`+ res.image.url
           }
         />
         <CardBody>
