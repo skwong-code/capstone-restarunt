@@ -55,9 +55,7 @@ if(searchQuery.length > 0){
         <CardImg
           top={true}
           style={{ height: 200 }}
-          src={
-          `https://skw-strapi2.herokuapp.com`+ res.image.url
-          }
+          src={res.image.url}
         />
         <CardBody>
           <CardText>{res.description}</CardText>
