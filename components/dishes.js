@@ -45,7 +45,7 @@ const GET_RESTAURANT_DISHES = gql`
 
   let restaurant = data.restaurant;
 
-  if (restId > 0){
+  if (restId != null){
 
     return (
       <>
