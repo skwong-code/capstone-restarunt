@@ -32,7 +32,7 @@ function RestaurantList(props){
     }
   `;
   const { loading, error, data } = useQuery(GET_RESTAURANTS)
-  if (loading) return <p>Loading...</p>;
+  if (loading) return <p>Subspace Transceiver Activating...</p>;
   if (error) return <p>ERROR</p>;
   if (!data) return <p>Not found</p>;
   console.log(`Query Data: ${data.restaurants}`)
