@@ -26,7 +26,7 @@ const Register = () => {
         <Col sm="12" md={{ size: 5, offset: 3 }}>
           <div className="paper">
             <div className="header">
-
+            <image src="https://image-b354.s3.us-west-1.amazonaws.com/register_33d5defadc.png"/>
             </div>
             <section className="wrapper">
               {Object.entries(error).length !== 0 &&

@@ -40,7 +40,7 @@ const GET_RESTAURANT_DISHES = gql`
   });
 
   if (loading) return <p>Loading...</p>;
-  if (error) return <p>ERROR here</p>;
+  if (error) return <p>Please Select Food Vending</p>;
   if (!data) return <p>Not found</p>;
 
   let restaurant = data.restaurant;

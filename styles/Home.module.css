@@ -5,6 +5,8 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  color: black;
+  background: black;
 }
 
 .main {
@@ -14,6 +16,9 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  color: black;
+  background: black;
+
 }
 
 .footer {

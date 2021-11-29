@@ -41,8 +41,8 @@ console.log('Layout: user', user);
         </style>
         <Nav className="navbar navbar-dark bg-dark">
           <NavItem>
-            <Link href="/">
-              <a className="navbar-brand">Home</a>
+            <Link href="/home2">
+              <a className="navbar-brand">Make your selection</a>
             </Link>
           </NavItem>
           <NavItem className="ml-auto">
@@ -76,6 +76,7 @@ console.log('Layout: user', user);
         </Nav>
       </header>
       <Container>{props.children}</Container>
+
     </div>
   );
 };

@@ -1,37 +1,21 @@
-import React, { useState } from "react";
-import Cart from "../components/cart"
-import {ApolloProvider,ApolloClient,HttpLink, InMemoryCache} from '@apollo/client';
-import RestaurantList from '../components/restaurantList';
-import { InputGroup, InputGroupAddon,Input} from "reactstrap";
-
+import Container from "reactstrap/lib/Container"
 
 function Home() {
-    const API_URL = process.env.NEXT_PUBLIC_API_URL || "http://localhost:1337";
-    console.log(`URL: ${API_URL}`)
-    const [query, setQuery] = useState("");
-    const link = new HttpLink({ uri: `${API_URL}/graphql`})
-    const cache = new InMemoryCache()
-    const client = new ApolloClient({link,cache});
- 
+
+
+    return <Container>
+      <html lang="en">
+
+<img src="https://image-b354.s3.us-west-1.amazonaws.com/Death_Star_icon_80c9199380.png" width="50%" height="50%" alignment/>
+     
+<p></p>
+<p> Please login to begin</p>
+
+    </html>
+    </Container>
   
-    return (
-        <ApolloProvider client={client}>
-          <div className="search">
-              <h2> Death Star Food Ordering Termnal</h2>
-                <InputGroup >
-                <InputGroupAddon addonType="append"> Search </InputGroupAddon>
-                <Input
-                    onChange={(e) =>
-                    setQuery(e.target.value.toLocaleLowerCase())
-                    }
-                    value={query}
-                />
-                </InputGroup><br></br>
-            </div>
-            <RestaurantList search={query} />
-            <Cart> </Cart>
-        </ApolloProvider>
-    );
+
+  
   }
-  export default Home;
+  export default Home
   
