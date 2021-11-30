@@ -5,9 +5,9 @@ function Home() {
 
     return <Container>
       <html lang="en">
-      <p></p>
+
 <p>
-<img class="center" src="https://image-b354.s3.us-west-1.amazonaws.com/Death_Star_icon_80c9199380.png" width="80%" height="80%"  />
+<a href="/SISO"><img class="center" src="https://image-b354.s3.us-west-1.amazonaws.com/Death_Star_icon_80c9199380.png" width="80%" height="80%" /></a>
 
 <style jsx>
           {`
@@ -15,7 +15,7 @@ function Home() {
           padding-top: 50px;
           padding-right: 40px;
           padding-bottom: 50px;
-          padding-left: 100px;
+          padding-left: 68px;
          }
       
           `}
