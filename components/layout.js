@@ -31,7 +31,7 @@ console.log('Layout: user', user);
         <style jsx>
           {`
             a {
-              color: white;
+              color: black;
             }
             h5 {
               color: white;
@@ -41,8 +41,8 @@ console.log('Layout: user', user);
         </style>
         <Nav className="navbar navbar-dark bg-dark">
           <NavItem>
-            <Link href="/home2">
-              <a className="navbar-brand">Make your selection</a>
+            <Link href="/">
+              <a className="navbar-brand">DEATHSTAR TERMINAL</a>
             </Link>
           </NavItem>
           <NavItem className="ml-auto">
