@@ -38,6 +38,7 @@ function Login(props) {
         <Col sm="12" md={{ size: 5, offset: 3 }}>
           <div className="paper">
             <div className="header">
+            <img src="https://image-b354.s3.us-west-1.amazonaws.com/login2_f810f0f862.png"></img>
             </div>
             <section className="wrapper">
               {Object.entries(error).length !== 0 &&
@@ -55,8 +56,10 @@ function Login(props) {
                   );
                 })}
               <Form>
+              
                 <fieldset disabled={loading}>
                   <FormGroup>
+               
                     <Label>Email:</Label>
                     <Input
                       onChange={(event) => onChange(event)}
@@ -76,7 +79,7 @@ function Login(props) {
 
                   <FormGroup>
                     <span>
-                      <a href="">
+                      <a href="/forgot">
                         <small>Forgot Password?</small>
                       </a>
                     </span>
@@ -130,7 +133,7 @@ function Login(props) {
             padding: 10px 30px 20px 30px !important;
           }
           a {
-            color: blue !important;
+            color: red !important;
           }
           img {
             margin: 15px 30px 10px 50px;
