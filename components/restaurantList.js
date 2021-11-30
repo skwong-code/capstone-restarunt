@@ -63,7 +63,7 @@ if(searchQuery.length > 0){
         <div className="card-footer">
         
         <Button color="info" onClick={()=> setRestaurantID(res.id)}>{res.name}</Button>
-         
+     
         </div>
       </Card>
     </Col>
@@ -87,4 +87,5 @@ if(searchQuery.length > 0){
   return <h1> No Restaurants Found</h1>
 }
 }
+
    export default RestaurantList

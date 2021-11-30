@@ -53,7 +53,7 @@ const Register = () => {
       <div class="card-body">
         <h5 class="card-title">Login using Imperal Googlatic ID </h5>
         <p class="card-text">Just Transfered?  Login with your Imperial Google ID  </p>
-        <a href="#" class="btn btn-primary btn-lg btn-block">Login with Google</a>
+        <a href="https://skw-strapi2.herokuapp.com/connect/google" class="btn btn-primary btn-lg btn-block">Login with Google</a>
       </div>
     </div>
   </div>
